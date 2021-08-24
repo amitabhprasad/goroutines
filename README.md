@@ -1,6 +1,6 @@
 # goroutines
-# Do not communicate by sharing memory; instead, share memory by communicating
-## Contain working examples of some of the typical multi-threaded uses cases
+- Contain working examples of some of the typical multi-threaded uses cases
+## Do not communicate by sharing memory; instead, share memory by communicating
 
 ## Channels:
 - Channel another type in Go
