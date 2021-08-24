@@ -8,17 +8,17 @@
 - Concurrent is design pattern that allows code to run in parallel and take advantage of CPU's
 - Blocks untill send and receive happens at the same time
 - Works only with multiple Go routines with single go routines, program will be blocked
-func main() {
+```func main() {
 	c := make(chan int)
 	c <- 42
 	fmt.Println(<-c)
-}
-but will work 
-func main() {
+}```
+but this will work 
+```func main() {
 	c := make(chan int)
 	go func(){c <- 42}()
 	fmt.Println(<-c)
-}
+}```
 - Buffered channel is another way to use channels
 - Channels allows to pass values between go-routines
 - when channel is closed `ok` will be set to false
