@@ -15,6 +15,12 @@ import (
 const workerPoolSize=4
 
 func main(){
+	//producerConsumer()
+	//fanInExample()
+	//fanOutExample()
+	fanInExampleRob()
+}
+func producerConsumer(){
 	var wg sync.WaitGroup
 	wg.Add(workerPoolSize)
 	fmt.Printf("Starting producer consumer....with num of routines %v\n ",runtime.NumGoroutine())
